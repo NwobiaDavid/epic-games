@@ -9,15 +9,19 @@ html{
 }
 
 .resp-hidden{
-    display: none !important;
+    display: none;
 }
 
-@media (max-width:700px) {
-    .resp-hidden{
-        display: flex !important;
-    }
+.side-bar{
+    display: none ;
+}
+.side-bar-active{
+    display: flex !important;
+}
 
+@media (max-width:768px) {
+   
     .resp-mob{
-        display: none !important;
+        display: none;
     }
 }

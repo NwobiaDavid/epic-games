@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
+    "css/one.css"
   ],
   theme: {
     extend: {},
