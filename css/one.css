@@ -9,19 +9,22 @@ html{
 }
 
 .resp-hidden{
-    display: none;
+    display: none ;
 }
 
 .side-bar{
-    display: none ;
-}
-.side-bar-active{
-    display: flex !important;
+    display: none;
 }
 
-@media (max-width:768px) {
+@media (max-width:950px) {
    
     .resp-mob{
         display: none;
     }
+
+    .resp-hidden{
+        display: flex;
+    }
+    
+   
 }
