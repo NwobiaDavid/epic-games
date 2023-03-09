@@ -8,7 +8,7 @@
 
     <!-- linking tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- linking custom css file -->
     <link rel="stylesheet" href="css/one.css" />
 
@@ -31,18 +31,17 @@
       crossorigin="anonymous"
     />
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- importing daisy ui
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
-
-
 
   <body>
     <nav
-      class="h-[3.3rem] w-screen bg-[#2a2a2a] flex items-center justify-between"
+      class="h-[3.3rem] w-screen bg-[#2a2a2a] flex items-center overflow-hidden justify-between "
     >
       <section
-        class="w-[80%] text-gray-400 font-semibold text-[11px] flex items-center justify-start"
+        class="w-1/2 md:w-[80%] text-gray-400 font-semibold text-[11px] flex items-center justify-start"
       >
         <a href="#" class="p-3 mx-2"
           ><img class="w-[30px] h-[35px]" src="images/download.png" alt="logo"
@@ -68,7 +67,7 @@
       </section>
 
       <section
-        class="w-1/2 resp-mob text-gray-400 font-semibold text-[10px] lg:flex items-center justify-end"
+        class="max-w-1/2 resp-mob overflow-hidden text-gray-400 font-semibold text-[10px] lg:flex items-center justify-end"
       >
         <a href="#" class="px-[2rem] text-sm py-[1rem]"
           ><i class="fa-solid fa-globe"></i
@@ -84,26 +83,37 @@
       </section>
 
       <section
-        class="w-[13%]   h-full text-gray-400 font-semibold text-[10px] items-center justify-end resp-hidden " id="responsive-toggle" >
-        <a href="#" class="p-[6px] h-full w-[60px] flex justify-center items-center bg-blue-500 text-white">
-            <i class="fa-solid fa-bars text-2xl"></i>
+        class="w-[13%] h-full overflow-hidden text-gray-400 font-semibold text-[10px] items-center justify-end resp-hidden"
+        id="responsive-toggle"
+      >
+        <a
+          href="#"
+          class="p-[6px] h-full w-[60px] flex justify-center items-center bg-blue-500 text-white"
+        >
+          <i class="fa-solid fa-bars text-2xl"></i>
         </a>
       </section>
 
-      <section id="ex" class="w-[13%] side-bar  text-center h-full text-gray-400 font-semibold hidden items-center justify-end">
-        <a href="#" class=" bg-blue-500 text-center h-full w-[60px] flex justify-center items-center text-white">
-            <i class="fa-solid fa-x text-2xl text-center"></i>
-       </a>
+      <section
+        id="ex"
+        class="w-[13%] overflow-hidden side-bar text-center h-full text-gray-400 font-semibold hidden items-center justify-end"
+      >
+        <a
+          href="#"
+          class="bg-blue-500 text-center h-full w-[60px] flex justify-center items-center text-white"
+        >
+          <i class="fa-solid fa-x text-2xl text-center"></i>
+        </a>
       </section>
-
     </nav>
 
-
     <section id="side-bar" class="w-screen side-bar flex-row-reverse">
-      <section class="h-[93.7vh] py-0 my-0 box-border w-80 bg-[#2a2a2a]  flex flex-col justify-between text-white">
+      <section
+        class="h-[93.7vh] py-0 my-0 box-border w-80 bg-[#2a2a2a] flex flex-col justify-between text-white"
+      >
         <div class="flex flex-col">
           <a href="#" class="pl-6 p-4 text-xs tracking-widest">STORE</a>
-          <hr class="text-gray-500"/>
+          <hr class="text-gray-500" />
           <a href="#" class="pl-6 p-4 text-xs tracking-widest">SUPPORT</a>
           <hr />
           <a href="#" class="pl-6 p-4 text-xs tracking-widest">UNREAL ENGINE</a>
@@ -111,18 +121,272 @@
         </div>
 
         <div class="shadow-lg drop-shadow-lg shadow-gray-600">
-          <div class="border-t-1 font-thin flex justify-between border-t-2 border-gray-500">
-            <a href="#" class="p-4 text-center w-3/4  border-r-2 border-gray-500"
-              ><i class="fa-solid mr-4 fa-user-plus tracking-widest"></i>SIGN IN</a
+          <div
+            class="border-t-1 font-thin flex justify-between border-t-2 border-gray-500"
+          >
+            <a href="#" class="p-4 text-center w-3/4 border-r-2 border-gray-500"
+              ><i class="fa-solid mr-4 fa-user-plus tracking-widest"></i>SIGN
+              IN</a
             >
-            <a href="#" class="p-4 w-1/4 text-center "><i class="fa-solid fa-globe"></i></a>
+            <a href="#" class="p-4 w-1/4 text-center"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
           </div>
 
-          <button class="p-5 w-full bg-blue-500 text-xs tracking-widest">DOWNLOAD</button>
+          <button class="p-5 w-full bg-blue-500 text-xs tracking-widest">
+            DOWNLOAD
+          </button>
         </div>
       </section>
     </section>
-    
+
+    <!-- homepage -->
+    <section class="pt-0 p-48 bg-black justify-center  flex flex-col">
+      <section class="flex text-gray-400 text-center py-7 relative">
+        <i
+          class="fa-solid icon mr-0 absolute top-[32%] text-xs left-2 fa-magnifying-glass"
+        ></i
+        ><input
+          type="text"
+          placeholder="Search store"
+          class="bg-[#2a2a2a] pl-12 rounded-3xl p-2"
+          name=""
+          id=""
+        />
+        <a href="#" class="text-center ml-7 m-3 mx-3 text-sm font-semibold"
+          >Discover</a
+        >
+        <a href="#" class="text-center m-3 mx-3 text-sm font-semibold"
+          >Browse</a
+        >
+        <a href="#" class="text-center m-3 mx-3 text-sm font-semibold">News</a>
+      </section>
+
+      <section class="flex justify-center items-center">
+        <div class="mr-4 flex justify-center items-center">
+
+          <div id="item1" class="relative fade mySlides">
+            <img
+              src="images/front-page/one.jpg"
+              class="w-[950px] rounded-2xl shadow-inner shadow-black h-[530px] car-img"
+            />
+            <div class="absolute max-h-[35rem] max-w-[24rem] shadow-black shadow-lg text-white bottom-3 p-6 overflow-hidden">
+              <img src="images/front-page/one-logo.png" class="my-16" alt="game-logo"/>
+              <p class="font-semibold">coming soon</p>
+              <p class="text-left font-semibold mt-2 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                accusantium delectus obcaecati recusandae molestias impedit
+                veritatis placeat commodi excepturi eaque?
+              </p>
+              <p class="mb-1">starting at $79.99</p>
+              <div class="flex items-center">
+                <button class="bg-white whitespace-nowrap text-sm font-semibold p-3 rounded-md text-black">PRE-PURCHASE NOW</button>
+                <div class="flex ml-3 text-black justify-center items-center text-center">
+                  <span class="fa-solid fa-circle-plus"></span>
+                  <p class="whitespace-nowrap ml-1 text-xs font-semibold">ADD TO WHISLIST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="item2" class="relative fade mySlides">
+            <img
+              src="images/front-page/three.jpg"
+              class="w-[950px] rounded-2xl shadow-inner shadow-black h-[530px] car-img"
+            />
+            <div class="absolute max-h-[35rem] max-w-[24rem] shadow-black shadow-lg text-white bottom-3 p-6 overflow-hidden">
+              <img src="images/front-page/three-logo.png" class="my-16" alt="game-logo"/>
+              <p class="font-semibold">coming soon</p>
+              <p class="text-left font-semibold mt-2 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                accusantium delectus obcaecati recusandae molestias impedit
+                veritatis placeat commodi excepturi eaque?
+              </p>
+              <p class="mb-1">starting at $79.99</p>
+              <div class="flex items-center">
+                <button class="bg-white whitespace-nowrap text-sm font-semibold p-3 rounded-md text-black">PRE-PURCHASE NOW</button>
+                <div class="flex ml-3 justify-center items-center text-center">
+                  <span class="fa-solid fa-circle-plus"></span>
+                  <p class="whitespace-nowrap ml-1 text-xs font-semibold">ADD TO WHISLIST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="item3" class="relative fade mySlides">
+            <img
+              src="images/front-page/five.jpg"
+              class="w-[950px] rounded-2xl shadow-inner shadow-black h-[530px] car-img"
+            />
+            <div class="absolute max-h-[35rem] max-w-[24rem] shadow-black shadow-lg text-white bottom-3 p-6 overflow-hidden">
+              <img src="images/front-page/five-logo.png" class="my-12 max-h-[11rem]" alt="game-logo"/>
+              <p class="font-semibold">coming soon</p>
+              <p class="text-left font-semibold mt-2 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                accusantium delectus obcaecati recusandae molestias impedit
+                veritatis placeat commodi excepturi eaque?
+              </p>
+              <p class="mb-1">starting at $79.99</p>
+              <div class="flex items-center">
+                <button class="bg-white whitespace-nowrap text-sm font-semibold p-3 rounded-md text-black">PRE-PURCHASE NOW</button>
+                <div class="flex ml-3 justify-center items-center text-center">
+                  <span class="fa-solid fa-circle-plus"></span>
+                  <p class="whitespace-nowrap ml-1 text-xs font-semibold">ADD TO WHISLIST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="item4" class="relative fade mySlides">
+            <img
+              src="images/front-page/six.jpg"
+              class="w-[950px] rounded-2xl shadow-inner shadow-black h-[530px] car-img"
+            />
+            <div class="absolute max-h-[35rem] max-w-[24rem] shadow-black shadow-lg text-white bottom-3 p-6 overflow-hidden">
+              <img src="images/front-page/six-logo.png" class="my-12 max-h-[11rem]" alt="game-logo"/>
+              <p class="font-semibold">coming soon</p>
+              <p class="text-left font-semibold mt-2 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                accusantium delectus obcaecati recusandae molestias impedit
+                veritatis placeat commodi excepturi eaque?
+              </p>
+              <p class="mb-1">starting at $79.99</p>
+              <div class="flex items-center">
+                <button class="bg-white whitespace-nowrap text-sm font-semibold p-3 rounded-md text-black">PRE-PURCHASE NOW</button>
+                <div class="flex ml-3 justify-center items-center text-center">
+                  <span class="fa-solid fa-circle-plus"></span>
+                  <p class="whitespace-nowrap ml-1 text-xs font-semibold">ADD TO WHISLIST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="item5" class="relative fade mySlides">
+            <img
+              src="images/front-page/seven.jpg"
+              class="w-[950px] rounded-2xl shadow-inner shadow-black h-[530px] car-img"
+            />
+            <div class="absolute max-h-[35rem] max-w-[24rem] shadow-black shadow-lg text-white bottom-3 p-6 overflow-hidden">
+              <img src="images/front-page/seven-logo.png" class="my-12 max-h-[11rem]" alt="game-logo"/>
+              <p class="font-semibold">coming soon</p>
+              <p class="text-left font-semibold mt-2 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                accusantium delectus obcaecati recusandae molestias impedit
+                veritatis placeat commodi excepturi eaque?
+              </p>
+              <p class="mb-1">starting at $79.99</p>
+              <div class="flex items-center">
+                <button class="bg-white whitespace-nowrap text-sm font-semibold p-3 rounded-md text-black">PRE-PURCHASE NOW</button>
+                <div class="flex ml-3 justify-center items-center text-center">
+                  <span class="fa-solid fa-circle-plus"></span>
+                  <p class="whitespace-nowrap ml-1 text-xs font-semibold">ADD TO WHISLIST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="item5" class="relative fade mySlides">
+            <img
+              src="images/front-page/two.jpg"
+              class="w-[950px] rounded-2xl shadow-inner shadow-black h-[530px] car-img"
+            />
+            <div class="absolute max-h-[35rem] max-w-[24rem] shadow-black shadow-lg text-white bottom-3 p-6 overflow-hidden">
+              <img src="images/front-page/seven-logo.png" class="my-12 max-h-[11rem]" alt="game-logo"/>
+              <p class="font-semibold">coming soon</p>
+              <p class="text-left font-semibold mt-2 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                accusantium delectus obcaecati recusandae molestias impedit
+                veritatis placeat commodi excepturi eaque?
+              </p>
+              <p class="mb-1">starting at $79.99</p>
+              <div class="flex items-center">
+                <button class="bg-white whitespace-nowrap text-sm font-semibold p-3 rounded-md text-black">PRE-PURCHASE NOW</button>
+                <div class="flex ml-3 justify-center items-center text-center">
+                  <span class="fa-solid fa-circle-plus"></span>
+                  <p class="whitespace-nowrap ml-1 text-xs font-semibold">ADD TO WHISLIST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex w-[16%] h-[530px] justify-between flex-col gap-2">
+          <a
+            href="#item1"
+            onclick="currentSlide(1)"
+            class="p-4 py-3 text-sm flex items-center dot my-0 text-white rounded-lg active hover:bg-gray-600"
+          >
+            <img
+              src="images/front-page/one-sm.jpg"
+              class="w-[40px] rounded-lg mr-3"
+              alt=""
+            />
+            Destiny 2: Lightfall
+          </a>
+          <a
+          onclick="currentSlide(2)"
+            href="#item2"
+            class="p-4 dot py-3 text-sm flex items-center my-0 text-white rounded-lg active hover:bg-gray-600"
+          >
+            <img
+              src="images/front-page/three-sm.jpg"
+              class="w-[40px] rounded-lg mr-3"
+              alt=""
+            />
+            Genshin Impact
+          </a>
+          <a
+          onclick="currentSlide(3)"
+            href="#item3"
+            class="p-4 py-3 dot text-sm flex items-center my-0 text-white rounded-lg active hover:bg-gray-600"
+          >
+            <img
+              src="images/front-page/five-sm.jpg"
+              class="w-[40px] rounded-lg mr-3"
+              alt=""
+            />The Settler New Allies
+          </a>
+          <a
+          onclick="currentSlide(3)"
+            href="#item4"
+            class="p-4 py-3 dot flex text-sm items-center my-0 text-white rounded-lg active hover:bg-gray-600"
+          >
+            <img
+              src="images/front-page/six-sm.jpg"
+              class="w-[40px] rounded-lg mr-3"
+              alt=""
+            />Crime Boss: Rockay City
+          </a>
+          <a
+            href="#item5"
+            class="p-4 py-3 dot flex text-sm items-center my-0 text-white rounded-lg active hover:bg-gray-600"
+          >
+            <img
+              src="images/front-page/seven-sm.jpg"
+              class="w-[40px] rounded-lg mr-3"
+              alt=""
+            />BattleField: Eleventh hour
+          </a>
+          <a
+            href="#item6"
+            class="p-4 py-3 dot flex text-sm items-center my-0 text-white rounded-lg active hover:bg-gray-600"
+          >
+            <img
+              src="images/front-page/one-sm.jpg"
+              class="w-[40px] rounded-lg mr-3"
+              alt=""
+            />
+            Destiny 2: Lightfall
+          </a>
+        </div>
+      </section>
+    </section>
+
+
+
+    <!-- importing jquery lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <script src="app.js"></script>
   </body>
 </html>

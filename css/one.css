@@ -6,6 +6,7 @@
 
 html{
     font-family:'Open Sans',sans-serif;
+    overflow: hidden;
 }
 
 .resp-hidden{
@@ -26,5 +27,31 @@ html{
         display: flex;
     }
     
-   
 }
+
+/* homepage */
+
+.icon{
+   
+   padding: 10px;
+  
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .mySlides{
+    display: none;
+  }
+
+  .active{
+    background-color: #374151;
+  }

@@ -4,6 +4,7 @@ module.exports = {
     "./src/**/*.{html,js}",
     "css/one.css"
   ],
+  plugins: [require("daisyui")],
   theme: {
     extend: {},
   },
